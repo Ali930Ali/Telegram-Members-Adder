@@ -45,6 +45,18 @@ def clr():
 
 while True:
     clr()
+    # manager.py
+
+# Renk kodları tanımları
+lg = '\033[92m'  # Yeşil
+w = '\033[97m'   # Beyaz
+n = '\033[0m'    # Renk sıfırlama
+rs = '\033[0m'   # Renk sıfırlama, rs = n ile aynı olabilir
+
+def banner():
+    print(f'{lg}Version: {w}2.0{lg} | GitHub: {w}@saifalisew1508{rs}')
+
+if __name__ == "__main__":
     banner()
     print(f'{lg}[1] Add new accounts{n}')
     print(f'{lg}[2] Filter all banned accounts{n}')
@@ -53,6 +65,27 @@ while True:
     print(f'{lg}[5] Display All Accounts{n}')
     print(f'{lg}[6] Quit{n}')
     a = int(input('\nEnter your choice: '))
+    if a == 1:
+        # Add new accounts işlemi için kod
+        pass
+    elif a == 2:
+        # Filter all banned accounts işlemi için kod
+        pass
+    elif a == 3:
+        # Delete specific accounts işlemi için kod
+        pass
+    elif a == 4:
+        # Update your Script işlemi için kod
+        pass
+    elif a == 5:
+        # Display All Accounts işlemi için kod
+        pass
+    elif a == 6:
+        # Quit işlemi için kod
+        pass
+    else:
+        print(f'{lg}Invalid choice{n}')
+        
     if a == 1:
         new_accs = []
         with open('vars.txt', 'ab') as g:
